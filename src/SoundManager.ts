@@ -9,7 +9,8 @@ export class SoundManager
 
     private editor!: SoundEditor;
 
-    constructor(mode: "dev" | "prod", anchor: UserPanelAnchor)
+    /** @internal */
+    protected constructor(mode: "dev" | "prod", anchor: UserPanelAnchor)
     {
         this.mode = mode;
 
