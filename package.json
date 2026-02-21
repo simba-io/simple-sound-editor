@@ -1,26 +1,22 @@
 {
   "name": "sound-manager",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "sound manager action event system",
+  "keywords": [],
+  "homepage": "https://github.com/simba-io/sound-manager#readme",
+  "bugs": {
+    "url": "https://github.com/simba-io/sound-manager/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/simba-io/sound-manager.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
+  "author": "cortec",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/simba-io/sound-manager/issues"
-  },
-  "homepage": "https://github.com/simba-io/sound-manager#readme",
-  "description": "",
-  "devDependencies": {
-    "@types/node": "^24.10.1",
-    "typescript": "^5.9.3"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@pixi/react": "^8.0.4",
@@ -30,5 +26,9 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tone": "^15.1.22"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
   }
 }
