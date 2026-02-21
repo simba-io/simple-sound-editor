@@ -19,7 +19,7 @@ export class SoundManager
             this.editor = new SoundEditor(this.anchor);
         }
 
-        console.log("SoundManager initialized:\n", `Mode: ${this.mode}\n`);
+        console.log("SoundManager initialized");
     }
 }
 
