@@ -1,1 +1,2 @@
-export { SoundManager } from './src/main';
+export * from './src/SoundManager';
+export * from './src/EditorView';
