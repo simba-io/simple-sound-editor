@@ -1,17 +1,20 @@
 import "./EditorView.css";
 
+/** @internal */
 export enum SoundManagerMode
 {
     DEV = "dev",
     PROD = "prod"
 }
 
+/** @internal */
 export enum UserPanelState
 {
     MINIMIZED,
     EXPANDED
 }
 
+/** @internal */
 export enum UserPanelAnchor
 {
     TOP = "top",
@@ -47,6 +50,7 @@ enum CSSClass
     INTERACTIVE = "sound-editor-canvas--interactive"
 }
 
+/** @internal */
 export class SoundEditor
 {
     private anchor!: UserPanelAnchor;

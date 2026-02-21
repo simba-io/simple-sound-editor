@@ -1,5 +1,6 @@
 import {SoundEditor, UserPanelAnchor} from "./EditorView";
 
+/** @internal */
 export class SoundManager
 {
     private mode!: string;
