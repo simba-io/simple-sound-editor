@@ -1,15 +1,15 @@
 {
-  "name": "sound-manager",
+  "name": "simple-sound-editor",
   "version": "1.0.0",
-  "description": "sound manager action event system",
+  "description": "simple sound editor action event system",
   "keywords": [],
-  "homepage": "https://github.com/simba-io/sound-manager#readme",
+  "homepage": "https://github.com/simba-io/simple-sound-editor#readme",
   "bugs": {
-    "url": "https://github.com/simba-io/sound-manager/issues"
+    "url": "https://github.com/simba-io/simple-sound-editor/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simba-io/sound-manager.git"
+    "url": "git+https://github.com/simba-io/simple-sound-editor.git"
   },
   "license": "ISC",
   "author": "cortec",
