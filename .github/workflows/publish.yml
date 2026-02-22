@@ -1,0 +1,39 @@
+name: Build and Publish to npm
+
+on:
+  release:
+    types: [published] # Triggers only when you formally publish a release
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # Required for provenance/security attestations
+    steps:
+      # 1. Check out your code from the main branch
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Node.js and point it to the npm registry
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      # 3. Install dependencies exactly as they are in your lockfile
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Compile your TypeScript into JavaScript and .d.ts files
+      # (Ensure you have a "build" script in your package.json)
+      - name: Build package
+        run: npm run build
+
+      # 5. Publish to npm using your secret token
+      # The --access public flag is necessary for scoped packages (e.g., @user/pkg)
+      - name: Publish to npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMSOUNDTOKEN }}
