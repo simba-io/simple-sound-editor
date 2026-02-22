@@ -1,0 +1,14 @@
+# Source files
+src/
+*.ts
+*.tsx
+!*.d.ts
+
+# Development files
+tsconfig.json
+.git
+.gitignore
+node_modules/
+
+# Build files
+*.map
